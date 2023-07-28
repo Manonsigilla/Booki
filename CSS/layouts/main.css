@@ -1,0 +1,182 @@
+main {
+    max-width: 1440px;
+    margin: auto;
+    padding: 0px 50px;
+}
+
+/************* SEARCH BAR *************************/
+
+.search-bar {
+    margin: 0;
+    display: inline-flex;
+    margin-top:30px;
+    margin-bottom:30px;
+}
+form .fa-location-dot {
+    border:1px solid #F2F2F2;
+    border-top-left-radius:15px;
+    border-bottom-left-radius:15px;
+    width:50px;
+    height:50px;
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.search-bar input {
+    border: 1px solid #F2F2F2;
+    padding-left: 15px;
+}
+.search-bar input::placeholder {
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    text-align: center;
+}
+.search-bar button {
+    background-color: #0065FC;
+    border: 1px solid #0065FC;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 15px 16px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/******************** FILTRES ********************/
+
+.filters {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin: 5px 0px;
+}
+.filter-component {
+    border: 2px solid #F2F2F2;
+    border-radius: 25px;
+    padding: 15px 30px;
+    background-color: white;
+    font-size: 17px;
+    font-weight: 700;
+}
+.filter-component:hover {
+    background-color: #DEEBFF;
+    cursor: pointer;
+}
+
+/******************* INFO *************************/
+.info-bar {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 40px;
+}
+p .fa-info {
+    border: 1px solid #d9d9d9;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    color: #0065FC;
+}
+
+/******************** LOGEMENTS ****************/
+
+#logements {
+    display: grid;
+    grid-template-columns: 67% auto;
+    gap: 30px;
+}
+#hebergements, #popular {
+    background-color: #F2F2F2;
+    padding: 30px;
+    border-radius: 15px;
+}
+.grid-card-hebergements {
+    display: grid;
+    padding: 30px 0px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+.grid-card-popular {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px 0px;
+}
+.grid-card-hebergements-component img {
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+}
+.grid-card-popular-component img {
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    object-fit: cover;
+}
+.grid-card-hebergements-component, .grid-card-popular-component {
+    padding: 5px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 3px 15px 0px #0000001A;
+}
+.grid-card-popular-component a{
+    display: grid;
+    grid-template-columns: auto 60%;
+}
+.grid-card-popular-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.popular-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (min-width: 768px) and (max-width: 979px) {
+    #logements {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/******************* ACTIVITES ********************/
+
+#activites {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px;
+}
+.grid-card-activites {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+.grid-card-activites-components {
+    box-shadow: 0px 3px 15px 0px #0000001A;
+    display: grid;
+    border-radius: 20px;
+    grid-template-rows: auto auto;
+}
+.grid-card-activites-components img{
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}

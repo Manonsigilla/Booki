@@ -1,0 +1,42 @@
+/*************** HEADER *********************/
+
+header {
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0px;
+}
+.logo-desktop img {
+    max-width: 100px;
+    height: auto;
+    display: flex;
+}
+
+@media screen and (min-width: 768px) and (max-width: 979px) {
+    header {
+        padding: 40px;
+    }
+}
+
+/**************** MENU *************************/
+
+.menu ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 68px;
+    list-style: none;
+}
+.menu ul a {
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+    text-decoration: none;
+    padding-top: 38px;
+    border-top: 2px solid transparent;
+}
+nav a:hover {
+    border-top: 2px solid #0065FC;
+    color: #0065FC;
+}

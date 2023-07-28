@@ -1,0 +1,36 @@
+.blue-color {
+    color : #0065FC;
+}
+#info-group {
+    margin-top: 20px;
+}
+#hebergements h2, #popular h2, #activites h2 {
+    font-size: 22px;
+    font-weight: 700;
+}
+.card-title {
+    font-weight: 700;
+    padding: 15px 10px;
+}
+.card-price {
+    font-size: 14px;
+    padding: 10px 10px;
+}
+.euro {
+    font-weight: 600;
+    font-size: 14px;
+}
+.stars {
+    display: flex;
+    padding: 10px 10px;
+}
+.blue-star {
+    color: #0065FC;
+}
+.grey-star {
+    color: #f2f2f2;
+}
+.activite-place {
+    font-weight: 700;
+    padding: 20px 19px;
+}
