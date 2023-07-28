@@ -147,7 +147,7 @@ p .fa-info {
     align-items: center;
 }
 
-@media screen and (min-width: 768px) and (max-width: 979px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
     #logements {
         display: flex;
         flex-direction: column;
@@ -160,7 +160,7 @@ p .fa-info {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    padding: 30px;
+    padding: 50px 30px;
 }
 .grid-card-activites {
     display: grid;
@@ -179,4 +179,13 @@ p .fa-info {
     object-fit: cover;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .grid-card-activites-components img {
+        height: 200px;
+    }
+    .grid-card-activites-components {
+        height: 100%;
+    }
 }

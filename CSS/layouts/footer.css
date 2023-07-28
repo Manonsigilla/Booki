@@ -7,3 +7,12 @@ footer {
     padding: 20px;
     background-color: #f2f2f2;
 }
+footer div {
+    padding: 0 50px;
+}
+
+@media screen and (max-width: 1024px) {
+    footer{
+        margin:0 50px;
+    }
+}
