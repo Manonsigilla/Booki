@@ -19,6 +19,15 @@ header {
     }
 }
 
+@media screen and (max-width: 767px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+}
+
 
 /**************** MENU *************************/
 
@@ -40,4 +49,25 @@ header {
 nav a:hover {
     border-top: 2px solid #0065FC;
     color: #0065FC;
+}
+
+@media screen and (max-width: 767px) {
+    .menu ul {
+        margin: auto;
+        padding: 10px 0px;
+        display: flex;
+        justify-content: space-between;
+        gap: 0px;
+    }
+    .menu ul a {
+        border-top: none;
+        border-bottom: 2px solid #F2F2F2;
+        padding: 10px 142px 30px 142px;
+        border-width: 100%;
+    }
+    nav a:hover {
+        border-top: none;
+        border-bottom: 2px solid #0065FC;
+        color: #0065FC;
+    }
 }
