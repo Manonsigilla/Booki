@@ -6,17 +6,17 @@
 h1 {
     font-size: 22px;
     font-weight: 700;
-    padding: 10px 0px;
+    padding: 10px;
 }
 h2 {
     font-size: 18px;
     font-weight: 700;
-    padding: 10px 0px;
+    padding: 10px;
 }
 p {
     font-size: 16px;
     font-weight: 400;
-    padding: 10px 0px;
+    padding: 10px;
 }
 a {
     text-decoration: none;
@@ -26,13 +26,13 @@ a {
     transition-duration: 400ms;
     cursor: pointer;
 }
-a div{
+a div, article a, div a{
    transform: scale(1);
    transition-property: transform;
    transition-duration: 400ms;
 }
 a:hover,
-a:hover div{
+a:hover div, div a:hover, div ul li a:hover, .grid-card-hebergements-component:hover{
     color:#0065FC;
     transform: scale(1.01);
 }

@@ -5,7 +5,9 @@ header {
     margin: auto;
     display: flex;
     justify-content: space-between;
-    padding: 40px 0px;
+    align-items: baseline;
+    margin-bottom: 50px;
+    padding: 0 15px;
 }
 .logo-desktop img {
     max-width: 100px;
@@ -15,7 +17,7 @@ header {
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     header {
-        padding: 40px;
+        margin-bottom: 40px;
     }
 }
 
@@ -25,6 +27,10 @@ header {
         flex-direction: column;
         align-items: center;
         gap: 30px;
+    }
+    .logo-desktop {
+        margin-top: 20px;
+        align-self: center;
     }
 }
 
@@ -43,31 +49,41 @@ header {
     font-weight: 400;
     color: black;
     text-decoration: none;
-    padding-top: 38px;
+    padding: 0 15px;
+}
+.menu li {
     border-top: 2px solid transparent;
+    padding-top: 50px;
 }
 nav a:hover {
     border-top: 2px solid #0065FC;
     color: #0065FC;
+    padding-top: 50px;
+    transition: all 0.2s ease;
 }
 
 @media screen and (max-width: 767px) {
     .menu ul {
-        margin: auto;
-        padding: 10px 0px;
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
         gap: 0px;
+        padding: 0;
+        text-align: center;
+    }
+    nav{
+        width:100%;
     }
     .menu ul a {
         border-top: none;
         border-bottom: 2px solid #F2F2F2;
-        padding: 10px 142px 30px 142px;
-        border-width: 100%;
+        display: block;
+        padding-bottom: 20px;
     }
     nav a:hover {
         border-top: none;
         border-bottom: 2px solid #0065FC;
         color: #0065FC;
+        padding-top: 0;
+        transform: none;
     }
 }

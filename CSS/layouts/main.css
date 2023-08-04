@@ -3,13 +3,15 @@ main {
     margin: auto;
     padding: 0px 50px;
 }
+main {
+    padding : 0;
+}
 
 /************* SEARCH BAR *************************/
 
 .search-bar {
     display: inline-flex;
-    margin-top:30px;
-    margin-bottom:30px;
+    margin: 30px 0px 30px 10px;
 }
 form .fa-location-dot {
     border:1px solid #F2F2F2;
